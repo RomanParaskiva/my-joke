@@ -1,0 +1,21 @@
+:root{
+    --logo: url('../img/kivach-dark.svg');
+    --bg: #161616;
+    --logo-color: #252525;
+    --block-bg: #252525;
+    --menu-active: #161616;
+    --title-color: #FFFFFF;
+    --welcome-color: #FFFFFF;
+    --block-color: #383838;
+    --date-color: #ACACAC;
+    --input-color: #383838;
+    --buses-color: #F0F0F0;
+    --buses-active: #383838;
+    --last-title: #FFFFFF;
+    --birthday-block: #383838;
+    --birthday-name: #FFFFFF;
+    --new_staff: #383838;
+    --welcome-btn: #383838;
+    --counter-color: #46C8B6;
+    --input-icon: url('../img/icons/comments-smile-dark.svg');
+}

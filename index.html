@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-pagination.css">
+    <link rel="stylesheet" href="css/swiper-navigation.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)" href="css/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)" href="css/dark.css">
+    <title>IKIVACH</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <div class="header__logo-img"></div>
+                    <div class="header__logo-main">
+                        <div class="main-img"></div>
+                        <div class="main-name">Ангелова К.Н.</div>
+                        <a href="#"><div class="main-nav"></div></a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="manu__list">
+                        <li class="list__item" id="menu-active"><a href=""><img src="img/menu-icons/mail.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Главная</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/news.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Новости и объявления</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/book.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Справка</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/sms.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Обращения и заявки</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/contacts.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Контакты</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/vacations.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Вакансии</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/polls.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Опросы</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/docs.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Документы</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/mail.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Почта</div><div class="list__item-counter">99</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/bus.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Транспорт</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/img.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Галерея и фото</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/bag.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Прайс</div></a></li>
+                        <li class="list__item"><a href=""><img src="img/menu-icons/cup.svg" alt="" class="list__item-icon"></img><div class="list__item-title">Меню столовой</div></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__item">
+            <div class="main__welcome"><div class="welcome-title">Добро пожаловать, <span>Карина</span></div> <a href="#" class="welcome-btn">Обращение</a></div>
+            <div class="main__item-inner">
+                <div class="inner__items">
+                    <div class="inner__item_left">
+                        <div class="item_left-jci main-block">
+                            <div class="jci-title title">
+                                <div class="jci-text text">Все о JCI</div>
+                                <a href="#" class="jci-link link">Подробнее</a>
+                            </div>
+                            <img src="img/jci-vid.png" alt="">
+                        </div>
+                        <div class="item_left-events main-block">
+                            <div class="events-title title">
+                                <div class="events-text text">События</div>
+                                <a href="#" class="events-link link">Все события</a>
+                            </div>
+                            <div class="events__blocks">
+                                <div class="events__blocks-item">
+                                    <div class="events-title">Тестирование JCI для новых сотрудников</div>
+                                    <div class="events__date"><img src="img/icons/calendar.svg" class="events__date-icon"><div class="events__date-text block-text">Понедельник, 07 июля 2023</div></div>
+                                    <div class="events__time"><img src="img/icons/clocks.svg" class="events__time-icon"><div class="events__time-text block-text">16:00 – 18:00 (2ч.)</div></div>
+                                    <div class="blocks-text">Тестирование для новых сотрудников и переаттестация по системе JCI (<a href="">статья</a>), первый конференц. зал. <br></br> <span>Явка обязательна</span>, список сотрудников <br> в <a href="">документе</a></div>
+                                    <div class="blocks__footer">
+                                        <div class="blocks__members">
+                                            <div class="blocks__members-title">Участники</div>
+                                            <div id="mp1" class="blocks__members-pics"></div>
+                                        </div>
+                                        <div id="btn-unactive" class="blocks__footer-btn">Детали</div>
+                                    </div>
+                                </div>
+                                <div class="events__blocks-item">
+                                    <div class="events-title">Собрание врачей</div>
+                                    <div class="events__date"><img src="img/icons/calendar.svg" class="events__date-icon"><div class="events__date-text block-text">Вторник, 30 июля 2023</div></div>
+                                    <div class="events__time"><img src="img/icons/clocks.svg" class="events__time-icon"><div class="events__time-text block-text">17:00 – 18:00 (1ч.)</div></div>
+                                    <div class="blocks-text">Обсуждение новых методик, диагностики щитовидной железы (<a href="">статья</a>), плановые работы, события, разбор обращений.</div>
+                                    <div class="blocks__footer" id="bf2">
+                                        <div class="blocks__members">
+                                            <div class="blocks__members-title">Участники</div>
+                                            <div id="mp2" class="blocks__members-pics"></div>
+                                        </div>
+                                        <div id="btn-active" class="blocks__footer-btn">Принять</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner__item_right">
+                        <div class="item_right-news main-block">
+                            <div class="news-title title">
+                                <div class="news-text text">Новости</div> 
+                                <a href="#" class="news-link link">Посмотреть</a>
+                            </div>
+                            <div class="news__main">
+                                <div class="news__main_content">
+                                    <div class="main_item-pics">
+                                        <div class="pics-high">
+                                            <img src="img/pics/news1.png" alt="">
+                                            <img src="img/pics/news2.png" alt="">
+                                        </div>
+                                        <div class="pics-down">
+                                            <img src="img/pics/news3.png" alt="">
+                                            <img src="img/pics/news4.png" alt="">
+                                            <img src="img/pics/news5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news__reactions">
+                                        <a href="#">
+                                            <div class="reactions-item">
+                                                <img src="img/icons/like.svg" class="reactions-icon">
+                                                <div class="reactions-counter">12</div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="reactions-item">
+                                                <img src="img/icons/comment.svg" class="reactions-icon">
+                                                <div class="reactions-counter">6</div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="reactions-item">
+                                                <img src="img/icons/views.svg" class="reactions-icon">
+                                                <div class="reactions-counter">2399</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news__main_text">
+                                    <div class="main_text-title">
+                                        Диагностика Патологии щитовидной железы и женское здоровье
+                                    </div>
+                                    <div class="main_text-date">29 июня 2023</div>
+                                    <div class="main_text-content">
+                                        Щитовидная железа - это небольшой орган, расположенный на передней стороне шеи, прямо под гортанью. Она выполняет важную роль в регулировании обмена веществ, производя гормоны, которые контролируют скорость, с которой наши клетки работают.
+                                    </div>
+                                    <a href="" class="main_text-link">Читать полностью</a>
+                                </div>
+                                <div class="news__comments">
+                                    <div class="comments-header">
+                                        <div class="comments-title">Комментарии</div>
+                                        <div class="comments-counter">6</div>
+                                    </div>
+                                    <div class="comments__main">
+                                        <div class="comments__main-pic"></div>
+                                        <div class="comments__main_input">
+                                            <input placeholder="Написать комментарий..." type="text">
+                                            <div class="main_input-icon"></div>
+                                            <div class="main_input-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_item-popular_pics main-block">
+                            <div class="popular_pics-title text">Популярные фото</div>
+                            <div class="popular_pics-content">
+                                <img src="img/pics/popular-pic.png" alt="">
+                                <div class="content__likes">
+                                    <div class="likes-icon"></div>
+                                    <div class="likes-counter">124</div>
+                                </div>
+                                <div class="content-title">Летний корпоратив День Нептуна</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner__item">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="item__date main-block">
+                <div class="item__date-header">
+                    <div class="item__date-title">Июль, 2023</div>
+                    <div class="item__date__btns">
+                        <div class="date__btns-item"></div>
+                        <div class="date__btns-item"></div>
+                    </div>
+                </div>
+                <div class="item__date-main">
+                    <div class="date__item">
+                        <div class="date__item-title">пн</div>
+                        <div class="date__item-counter">30</div>
+                    </div>
+                    <div class="date__item">
+                        <div class="date__item-title">вт</div>
+                        <div class="date__item-counter">1</div>
+                    </div>
+                    <div class="date__item" id="date-active">
+                        <div class="date__item-title">ср</div>
+                        <div class="date__item-counter">2</div>
+                    </div>
+                    <div class="date__item">
+                        <div class="date__item-title">чт</div>
+                        <div class="date__item-counter">3</div>
+                    </div>
+                    <div class="date__item">
+                        <div class="date__item-title">пт</div>
+                        <div class="date__item-counter">4</div>
+                    </div>
+                    <div class="date__item">
+                        <div class="date__item-title">сб</div>
+                        <div class="date__item-counter">5</div>
+                    </div>
+                    <div class="date__item">
+                        <div class="date__item-title">вс</div>
+                        <div class="date__item-counter">6</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__buses main-block">
+                <div class="buses-title last-title">Расписание автобусов</div>
+                <div class="buses__main">
+                    <div class="buses__main-item">
+                        <div class="buses__main-icon"></div>
+                        <div class="buses__main-time">05:20</div>
+                        <div class="buses__main-start">Кондопога</div>
+                        <div class="buses__main-line"></div>
+                        <div class="buses__main-destination">Клиника</div>
+                        <div class="buses__main-btn"></div>
+                    </div>
+                    <div class="buses__main-item" id="buses-active">
+                        <div class="buses__main-icon"></div>
+                        <div class="buses__main-time">07:00</div>
+                        <div class="buses__main-start">Петрозаводск</div>
+                        <div class="buses__main-line"></div>
+                        <div class="buses__main-destination">Клиника</div>
+                        <div class="buses__main-btn"></div>
+                    </div>
+                    <div class="buses__main-item">
+                        <div class="buses__main-icon"></div>
+                        <div class="buses__main-time">07:25</div>
+                        <div class="buses__main-start">Кондопога</div>
+                        <div class="buses__main-line"></div>
+                        <div class="buses__main-destination">Клиника</div>
+                        <div class="buses__main-btn"></div>
+                    </div>
+                </div>
+                <div id="map" class="buses__map"></div>
+                <div class="buses-btn">Подробнее</div>
+            </div>
+            <div class="item__birthday main-block">
+                <div class="birthday-title last-title">Сегодня день рождения</div>
+                <div class="birthday__block">
+                    <img src="img/birthday-pic1.png" alt="">
+                    <div class="birthday__block-content">
+                        <div class="birthday-name">Климентский Андрей Аристархович</div>
+                        <div class="birthday-date">34 года, 02.07.1989</div>
+                        <div class="birthday-profession">Врач, косметолог</div>
+                    </div>
+                </div>
+                <div class="birthday__block">
+                    <img src="img/birthday-pic2.png" alt="">
+                    <div class="birthday__block-content">
+                        <div class="birthday-name">Зажимная Анна Александровна</div>
+                        <div class="birthday-date">32 года, 02.07.1991</div>
+                        <div class="birthday-profession">Врач, терапевт</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__new_staff main-block">
+                <div class="new_staff-title last-title">Новые сотрудники</div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="new_staff__block">
+                            <img src="img/new_staff-pic.png" alt="">
+                            <div class="new_staff__block-content">
+                                <div class="new_staff-name">Константинопольский <br> Константин Константинович</div>
+                                <div class="new_staff-profession">Хирург</div>
+                                <div class="new_staff-date">дата устройства 01.08.2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_staff__block">
+                            <img src="img/new_staff-pic.png" alt="">
+                            <div class="new_staff__block-content">
+                                <div class="new_staff-name">Константинопольский <br> Константин Константинович</div>
+                                <div class="new_staff-profession">Хирург</div>
+                                <div class="new_staff-date">дата устройства 01.08.2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_staff__block">
+                            <img src="img/new_staff-pic.png" alt="">
+                            <div class="new_staff__block-content">
+                                <div class="new_staff-name">Константинопольский <br> Константин Константинович</div>
+                                <div class="new_staff-profession">Хирург</div>
+                                <div class="new_staff-date">дата устройства 01.08.2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <script src="libs/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
