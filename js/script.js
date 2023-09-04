@@ -10,6 +10,8 @@
 
 // YMaps.ready(init);
 
+// swiper
+
 const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 100,
@@ -23,3 +25,52 @@ const swiper = new Swiper('.swiper', {
         prevEl: ".swiper-button-prev"
     },
 });
+
+
+// Выпадающий список
+
+const welcomeBtn = document.querySelector('.welcome__btn');
+const welcomeBtnContent = document.querySelector('.welcome__btn__content');
+const sms = document.getElementById('sms');
+const smsContent = document.querySelector('.sms__content');
+
+welcomeBtn.addEventListener('click', () => {
+    welcomeBtn.classList.toggle('open-menu');
+    welcomeBtnContent.classList.toggle('open-menu');
+});
+
+sms.addEventListener('click', () => {
+    sms.classList.toggle('open-menu');
+    smsContent.classList.toggle('open-menu');
+});
+
+sms.addEventListener('mouseleave', () => {
+    sms.classList.remove('open-menu');
+    smsContent.classList.remove('open-menu');
+});
+
+// Бургер
+
+const burger = document.querySelector('.header__menu-burger');
+const menu = document.querySelector('.header__inner');
+const container = document.querySelector('.container');
+const mobileImg = document.querySelector('.mobile-logo')
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('open-menu');
+    menu.classList.toggle('open-menu');
+    container.classList.toggle('open-menu');
+    mobileImg.classList.toggle('open-menu');
+});
+
+// Main swap
+
+const mainFooter = document.getElementById('main__footer')
+const mainContent = document.getElementById('main__content')
+const mobileBtn = document.querySelector('.mobile-btn')
+
+mobileBtn.addEventListener('click', () => {
+    mobileBtn.classList.toggle('open-menu')
+    mainFooter.classList.toggle('open-menu')
+    mainContent.classList.toggle('open-menu')
+})
