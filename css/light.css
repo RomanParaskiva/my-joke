@@ -19,5 +19,11 @@
     --counter-color:#66A67E;
     --header-mobile: #FFFFFF;
     --logo-mobile: #007A3D;
+    --logo-mobile-img: url("../img/logo-mobile-white.svg");
+    --mobile-btn-img: url("../img/icons/scan-white.svg");
     --input-icon: url('../img/icons/comments-smile.svg');
+    --footer-icon-1:url('../img/icons/mail-mobile-white.svg');
+    --footer-icon-2:url('../img/icons/contacts-mobile-white.svg');
+    --footer-icon-3:url('../img/icons/buses-mobile-white.svg');
+    --footer-icon-4:url('../img/icons/eat-mobile-white.svg');
 }

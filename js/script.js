@@ -33,6 +33,14 @@ const welcomeBtn = document.querySelector('.welcome__btn');
 const welcomeBtnContent = document.querySelector('.welcome__btn__content');
 const sms = document.getElementById('sms');
 const smsContent = document.querySelector('.sms__content');
+const mainFooter = document.getElementById('main__footer')
+const mainContent = document.getElementById('main__content')
+const mobileBtn = document.querySelector('.mobile-btn')
+const burger = document.querySelector('.header__menu-burger');
+const menu = document.querySelector('.header__inner');
+const container = document.querySelector('.container');
+const mobileImg = document.querySelector('.mobile-logo');
+const body = document.querySelector('body')
 
 welcomeBtn.addEventListener('click', () => {
     welcomeBtn.classList.toggle('open-menu');
@@ -51,23 +59,19 @@ sms.addEventListener('mouseleave', () => {
 
 // Бургер
 
-const burger = document.querySelector('.header__menu-burger');
-const menu = document.querySelector('.header__inner');
-const container = document.querySelector('.container');
-const mobileImg = document.querySelector('.mobile-logo')
+
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('open-menu');
     menu.classList.toggle('open-menu');
     container.classList.toggle('open-menu');
     mobileImg.classList.toggle('open-menu');
+    body.classList.toggle('open-menu');
+    mainContent.classList.toggle('open-burger');
 });
 
 // Main swap
 
-const mainFooter = document.getElementById('main__footer')
-const mainContent = document.getElementById('main__content')
-const mobileBtn = document.querySelector('.mobile-btn')
 
 mobileBtn.addEventListener('click', () => {
     mobileBtn.classList.toggle('open-menu')
