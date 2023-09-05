@@ -42,10 +42,28 @@ const container = document.querySelector('.container');
 const mobileImg = document.querySelector('.mobile-logo');
 const body = document.querySelector('body')
 
+function toogleClass (el, className, targeClassName) {
+
+}
+
 welcomeBtn.addEventListener('click', () => {
     welcomeBtn.classList.toggle('open-menu');
     welcomeBtnContent.classList.toggle('open-menu');
+
+    const listener = e => {
+        if(!welcomeBtn.contains(event.target)) {
+            welcomeBtn.classList.remove('open-menu');
+            welcomeBtnContent.classList.remove('open-menu');
+        } 
+    }
+
+    if(welcomeBtn.classList.contains("open-menu")) {
+        document.addEventListener("click", listener, false)
+    } else {
+        document.removeEventListener("click", listener, false)
+    }
 });
+
 
 sms.addEventListener('click', () => {
     sms.classList.toggle('open-menu');
